@@ -771,6 +771,7 @@ stats hw_flow_status[] = {
 {MGMT_STATS,		"Radio MGMT statistics",		NONE,	0},
 {HW_FLOW_STATUS,	"Radars detected",				LONG,	0},
 {HW_FLOW_STATUS,    "zwdfs_Radars detected",		LONG,	0},
+{HW_FLOW_STATUS,	"ZWDFS Antenna RSSI [dBm]",		SLONG, 0},
 {HW_FLOW_STATUS,	"Total Airtime Efficiency [bytes/sec]",	LONG,	0},
 {HW_FLOW_STATUS,	"Channel Load [%]",				BYTE,	0},
 {HW_FLOW_STATUS,	"Channel Utilization [%]",		BYTE,	0},
@@ -942,14 +943,16 @@ stats per_client_stats[] = {
 
 stats peer_phy_rx_status[] = {
 {PEER_PHY_RX_STATUS,	"rssi",										SLONG,		0},
+{PEER_PHY_RX_STATUS,	"rcpi_avg",									SLONG,		0},
 {PEER_PHY_RX_STATUS,	"phyRate",									LONG,		0},
 {PEER_PHY_RX_STATUS,	"irad",										LONG,		0},
 {PEER_PHY_RX_STATUS,	"lastTsf",									LONG,		0},
 {PEER_PHY_RX_STATUS,	"perClientRxtimeUsage",								LONG,		0},
-{PEER_PHY_RX_STATUS,	"noise",									LONGARRAY,	4},
-{PEER_PHY_RX_STATUS,	"gain",										LONGARRAY,	4},
 {PEER_PHY_RX_STATUS,	"psduRate",									LONG,		0},
 {PEER_PHY_RX_STATUS,	"phyRateSynchedToPsduRate",							LONG,		0},
+{PEER_PHY_RX_STATUS,	"noise",									SBYTEARRAY,	5},
+{PEER_PHY_RX_STATUS,	"gain",										BYTEARRAY,	5},
+{PEER_PHY_RX_STATUS,	"rcpi",										SBYTEARRAY,	5},
 };
 
 stats peer_info[] = {
