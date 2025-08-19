@@ -852,6 +852,10 @@ static void dump_csi_parse_data_to_file(char *outData, unsigned int outLen, char
 	unsigned num_nonzero_rssi = 0;
 	int chip_type;
 
+	if(csi == NULL) {
+		return;
+	}
+
 	convertMac(sMac, sta_mac);
 	parse_csi_matrix(csi->csi_raw_data, csi_matrix, csi_matrix_size, &time_stamp1, &time_stamp2, &csi_parsing_error);
 	chip_type = csi->csi_raw_data[0] & 3;
