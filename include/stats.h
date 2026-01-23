@@ -936,6 +936,7 @@ stats per_client_stats[] = {
 {PER_CLIENT_STATS,	"dropCntReasonDiscard",								HUGE,   0},
 {PER_CLIENT_STATS,	"dropCntReasonDsabled",								HUGE,   0},
 {PER_CLIENT_STATS,	"dropCntReasonAggError",							HUGE,   0},
+{PER_CLIENT_STATS,	"dropCntReasonAqm",							HUGE,   0},
 {PER_CLIENT_STATS,	"mpduRetryCount",								HUGE,   0},
 {PER_CLIENT_STATS,	"mpduInAmpdu",									HUGE,   0},
 {PER_CLIENT_STATS,	"ampdu",									HUGE,   0},
