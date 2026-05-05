@@ -341,7 +341,7 @@ enum mu_la_group_type
 };
 
 #define MAX_NUM_OF_HE_GROUPS 26
-#define MAX_STA_IN_GROUP      8
+#define MAX_STA_IN_GROUP      4
 #define MAX_MCS              14
 /* This struct must match with drivers mtlk_wssa_drv_la_mu_he_eht_stats_t */
 typedef struct la_mu_he_eht_stats
@@ -1159,6 +1159,8 @@ stats general_stats[] = {
 {GENERAL_STATS,		"debugStatistics",								LONG,	0},
 {GENERAL_STATS,		"exceedsETSIMaxSizeUnicast",								LONG,	0},
 {GENERAL_STATS,		"exceedsETSIMaxSizeMulticast",								LONG,	0},
+{GENERAL_STATS,		"freePdCount",								LONG,	0},
+{GENERAL_STATS,		"freeRdCount",								LONG,	0},
 };
 
 stats channel_stats[] = {
