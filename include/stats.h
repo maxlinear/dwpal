@@ -359,6 +359,16 @@ typedef struct la_mu_he_eht_stats
         uint32_t heMuFastProbeNotFinishedCnt[MAX_STA_IN_GROUP];
         uint32_t heMuCollisionDetectedCnt[MAX_STA_IN_GROUP];
         uint32_t mcsHistogram[MAX_STA_IN_GROUP][MAX_MCS];
+        uint16_t phyRate[MAX_STA_IN_GROUP];
+		uint32_t dataRate[MAX_STA_IN_GROUP];
+        uint32_t airUse[MAX_STA_IN_GROUP];
+        uint32_t dataUse[MAX_STA_IN_GROUP];
+		uint8_t  muBw[MAX_STA_IN_GROUP];
+		uint8_t  muPER[MAX_STA_IN_GROUP];
+        uint8_t  muMcsNss[MAX_STA_IN_GROUP];
+        uint32_t numOfOfdmaPpdus[MAX_STA_IN_GROUP];
+        uint32_t numOfMuMimoPpdus[MAX_STA_IN_GROUP];
+        uint32_t totalPpdus[MAX_STA_IN_GROUP];
 
         uint16_t staId[MAX_STA_IN_GROUP];
         int8_t   targetRssi[MAX_STA_IN_GROUP];
@@ -373,6 +383,15 @@ typedef struct la_mu_he_eht_stats
         uint32_t changedWpCnt[MAX_STA_IN_GROUP];
         uint32_t collisionDetectedCnt[MAX_STA_IN_GROUP];
         uint32_t mcsHistogram[MAX_STA_IN_GROUP][MAX_MCS];
+        uint16_t phyRate[MAX_STA_IN_GROUP];
+		uint32_t dataRate[MAX_STA_IN_GROUP];
+        uint32_t airUse[MAX_STA_IN_GROUP];
+        uint32_t dataUse[MAX_STA_IN_GROUP];
+        uint8_t  muBw[MAX_STA_IN_GROUP];
+        uint8_t  muMcsNss[MAX_STA_IN_GROUP];
+        uint32_t numOfOfdmaPpdus[MAX_STA_IN_GROUP];
+        uint32_t numOfMuMimoPpdus[MAX_STA_IN_GROUP];
+        uint32_t totalPpdus[MAX_STA_IN_GROUP];
 
         uint16_t staId[MAX_STA_IN_GROUP];
         int8_t   targetRSSI[MAX_STA_IN_GROUP];
